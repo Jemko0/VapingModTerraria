@@ -114,5 +114,13 @@ namespace VapingMod.Items
                 SoundEngine.PlaySound(extraExhale);
             }
         }
+
+        public override void AddRecipes()
+        {
+            Recipe r = Recipe.Create(Type, 1);
+            r.AddIngredient(ItemID.IronBar, 2);
+            r.AddTile(TileID.Anvils);
+            base.AddRecipes();
+        }
     }
 }
