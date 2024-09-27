@@ -20,5 +20,10 @@ namespace VapingMod.Buffs
             rare = 4;
             base.ModifyBuffText(ref buffName, ref tip, ref rare);
         }
+
+        public override bool RightClick(int buffIndex)
+        {
+            return false;
+        }
     }
 }

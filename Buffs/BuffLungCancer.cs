@@ -31,5 +31,10 @@ namespace VapingMod.Buffs
             }
             base.Update(player, ref buffIndex);
         }
+
+        public override bool RightClick(int buffIndex)
+        {
+            return false;
+        }
     }
 }
