@@ -18,5 +18,14 @@ namespace VapingMod.Items
             base.SetDefaults();
             Item.rare = ItemRarityID.Purple;
         }
+
+        public override void AddRecipes()
+        {
+            Recipe r = Recipe.Create(Type, 1);
+            r.AddIngredient(ItemID.IronBar, 2);
+            r.AddIngredient(ItemID.FallenStar, 3);
+            r.AddTile(TileID.Anvils);
+            base.AddRecipes();
+        }
     }
 }
