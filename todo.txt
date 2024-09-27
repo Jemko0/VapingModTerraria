@@ -1,0 +1,6 @@
+﻿//TODO
+
+- add nicotine addiction properly (player gets urge and stuff)
+- add more vapes
+- add carts as ammo or something
+- evil jonkler cart

@@ -15,7 +15,7 @@ namespace VapingMod.Items
         {
             particleId = DustID.YellowStarDust;
             extraExhale = SoundID.Item4;
-            cancerChance = 750;
+            cancerChance = 650;
             nicChance = 17;
         }
 

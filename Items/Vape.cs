@@ -30,8 +30,8 @@ namespace VapingMod.Items
         public float particleScale = 1.5f;
         public SoundStyle? extraInhale = null;
         public SoundStyle? extraExhale = null;
-        public int cancerChance = 800;
-        public int nicChance = 20;
+        public int cancerChance = -1;
+        public int nicChance = -1;
 
         public override bool? UseItem(Player player)
         {
@@ -50,7 +50,7 @@ namespace VapingMod.Items
 
         protected void LungCancer(Player player)
         {
-            if (Main.rand.Next(0, cancerChance + 1) == 0)
+            if (Main.rand.Next(0, cancerChance + 1) == 0 && cancerChance != -1)
             {
                 player.AddBuff(ModContent.BuffType<BuffLungCancer>(), Util.GetFramesFromSeconds(3600));
                 Logging.PublicLogger.Info(player.name + " diagnosed with lung cancer (too much chiefin)");
@@ -63,7 +63,7 @@ namespace VapingMod.Items
 
         protected void NicotineAddiction(Player player)
         {
-            if (Main.rand.Next(0, nicChance + 1) == 0)
+            if (Main.rand.Next(0, nicChance + 1) == 0 && nicChance != -1)
             {
                 player.AddBuff(ModContent.BuffType<BuffNicotine>(), Util.GetFramesFromSeconds(3600));
             }
