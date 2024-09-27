@@ -1,2 +1,23 @@
-# This file will automatically update with entries for new content after a build and reload.
+Items: {
+	Vape: {
+		DisplayName: Basic Vape
+		Tooltip: bland and boring (no nicotine)
+	}
 
+	StardustVape: {
+		DisplayName: Stardust Vape
+		Tooltip: makes ur breath shiny and glittery
+	}
+}
+
+Buffs: {
+	BuffLungCancer: {
+		DisplayName: Lung Cancer
+		Description: lung cancer
+	}
+
+	BuffNicotine: {
+		DisplayName: Buff Nicotine
+		Description: Mods.VapingMod.Buffs.BuffNicotine.Description
+	}
+}

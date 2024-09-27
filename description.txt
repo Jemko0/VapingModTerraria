@@ -1,1 +1,5 @@
-Modify this file with a description of your mod.
+Terraria´s first vaping mod (i think?)
+anyways ima update this once in a while
+source available for the public
+
+GitHub repo: https://github.com/Jemko0/VapingModTerraria
