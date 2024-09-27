@@ -8,7 +8,16 @@
 		
 	</PropertyGroup>
 	<ItemGroup>
+	  <AdditionalFiles Remove="todo.txt" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Buffs\BuffNicotine.png" />
+	  <None Remove="Items\StardustVape.png" />
 	  <None Remove="Items\Vape.png" />
+	  <None Remove="todo.txt" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Compile Include="todo.txt" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Sounds\Music\" />
