@@ -8,6 +8,11 @@ Items: {
 		DisplayName: Stardust Vape
 		Tooltip: makes ur breath shiny and glittery
 	}
+
+	Cart: {
+		DisplayName: Cart
+		Tooltip: ""
+	}
 }
 
 Buffs: {
