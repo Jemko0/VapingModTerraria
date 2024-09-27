@@ -58,7 +58,7 @@ namespace VapingMod.Items
         {
             if (Main.rand.Next(0, cancerChance + 1) == 0 && cancerChance != -1)
             {
-                player.AddBuff(ModContent.BuffType<BuffLungCancer>(), Util.GetFramesFromSeconds(3600));
+                player.AddBuff(ModContent.BuffType<BuffLungCancer>(), Util.GetFramesFromSeconds(3600)); //@todo make it get longer the more the player smokes
                 Logging.PublicLogger.Info(player.name + " diagnosed with lung cancer (too much chiefin)");
             }
             else
@@ -71,7 +71,7 @@ namespace VapingMod.Items
         {
             if (Main.rand.Next(0, nicChance + 1) == 0 && nicChance != -1)
             {
-                player.AddBuff(ModContent.BuffType<BuffNicotine>(), Util.GetFramesFromSeconds(3600));
+                player.AddBuff(ModContent.BuffType<BuffNicotine>(), Util.GetFramesFromSeconds(360000)); //@todo make it get longer the more the player smokes
             }
         }
 

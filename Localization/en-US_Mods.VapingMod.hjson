@@ -17,7 +17,7 @@ Buffs: {
 	}
 
 	BuffNicotine: {
-		DisplayName: Buff Nicotine
-		Description: Mods.VapingMod.Buffs.BuffNicotine.Description
+		DisplayName: Nicotine Addiction
+		Description: nicotine addiction
 	}
 }
