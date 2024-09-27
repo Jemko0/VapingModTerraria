@@ -3,8 +3,6 @@ using Terraria.ID;
 using Terraria;
 using VapingMod.Helper;
 using Terraria.Audio;
-using Microsoft.Xna.Framework;
-using System.Threading;
 using VapingMod.Buffs;
 
 namespace VapingMod.Items
