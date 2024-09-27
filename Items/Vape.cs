@@ -7,6 +7,9 @@ using VapingMod.Buffs;
 
 namespace VapingMod.Items
 {
+    /// <summary>
+    /// vape base class
+    /// </summary>
     public class Vape : ModItem
     {
         private int timer = 0;
@@ -22,7 +25,12 @@ namespace VapingMod.Items
             Item.useStyle = ItemUseStyleID.DrinkLong;
         }
 
-        /// overridable for subclasses
+        // overridable for subclasses
+
+        /// <summary>
+        /// @todo make struct later on
+        /// </summary>
+
         public int particleId = DustID.Smoke;
         public int particleVel = 5;
         public float particleScale = 1.5f;
@@ -46,7 +54,7 @@ namespace VapingMod.Items
             return true;
         }
 
-        protected void LungCancer(Player player)
+        protected virtual void LungCancer(Player player)
         {
             if (Main.rand.Next(0, cancerChance + 1) == 0 && cancerChance != -1)
             {
@@ -59,7 +67,7 @@ namespace VapingMod.Items
             }
         }
 
-        protected void NicotineAddiction(Player player)
+        protected virtual void NicotineAddiction(Player player)
         {
             if (Main.rand.Next(0, nicChance + 1) == 0 && nicChance != -1)
             {
