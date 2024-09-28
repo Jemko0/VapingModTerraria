@@ -2,4 +2,7 @@ Terraria´s first vaping mod (i think?)
 anyways ima update this once in a while
 source available for the public
 
+how to find:
+dryad/travelling merchant sells them or you can craft them (ask guide)
+
 GitHub repo: https://github.com/Jemko0/VapingModTerraria

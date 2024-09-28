@@ -7,6 +7,7 @@ using Terraria.ID;
 using Terraria;
 using Terraria.ModLoader;
 using VapingMod.Items.Carts;
+using VapingMod.Items;
 
 namespace VapingMod.Systems
 {
@@ -17,6 +18,7 @@ namespace VapingMod.Systems
         {
             if (shop.NpcType == NPCID.Dryad)
             {
+                shop.Add(new NPCShop.Entry(ModContent.ItemType<Vape>()));
                 shop.Add(new NPCShop.Entry(ModContent.ItemType<EvilJonklerCart>()));
             }
         }
