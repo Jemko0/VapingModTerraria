@@ -13,6 +13,16 @@ Items: {
 		DisplayName: Cart
 		Tooltip: ""
 	}
+
+	EvilJonklerCart: {
+		DisplayName: Evil Jonkler Cart
+		Tooltip: ""
+	}
+
+	EvilJonklerVape: {
+		DisplayName: Evil Jonkler Vape
+		Tooltip: ""
+	}
 }
 
 Buffs: {

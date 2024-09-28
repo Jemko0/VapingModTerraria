@@ -83,7 +83,7 @@ namespace VapingMod.Items
             {
                 if (timer < Item.useTime + 15)
                 {
-                    Dust.NewDustDirect(player.position, 16, 16, particleId, player.direction == 1 ? particleVel : -particleVel, 0, Scale: particleScale);
+                    Dust.NewDustDirect(player.position, 16, 16, particleId, (player.direction == 1 ? particleVel : -particleVel) + player.velocity.X, 0, Scale: particleScale);
                 }
 
                 if(running == true)
@@ -120,7 +120,7 @@ namespace VapingMod.Items
             Recipe r = Recipe.Create(Type, 1);
             r.AddIngredient(ItemID.IronBar, 2);
             r.AddTile(TileID.Anvils);
-            base.AddRecipes();
+            r.Register();
         }
     }
 }

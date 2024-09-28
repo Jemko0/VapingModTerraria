@@ -25,7 +25,7 @@ namespace VapingMod.Items
             r.AddIngredient(ItemID.IronBar, 2);
             r.AddIngredient(ItemID.FallenStar, 3);
             r.AddTile(TileID.Anvils);
-            base.AddRecipes();
+            r.Register();
         }
     }
 }
