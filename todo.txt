@@ -2,7 +2,5 @@
 
 - add nicotine addiction properly (player gets urge and stuff)
 - add more vapes
-- add carts as ammo or something
-- evil jonkler cart
 - add lung cancer stages
 - add length to addiction & cancer if more smoked
