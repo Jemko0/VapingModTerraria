@@ -16,6 +16,7 @@ namespace VapingMod.Items.Carts
             base.SetStaticDefaults();
             Item.value = 15000;
         }
+
         public override void AddRecipes()
         {
             Recipe r = Recipe.Create(Type, 1);

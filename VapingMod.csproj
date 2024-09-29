@@ -11,6 +11,7 @@
 	  <AdditionalFiles Remove="todo.txt" />
 	</ItemGroup>
 	<ItemGroup>
+	  <None Remove="Buffs\BuffJonkler.png" />
 	  <None Remove="Buffs\BuffNicotine.png" />
 	  <None Remove="Dusts\EvilJonklerDust.png" />
 	  <None Remove="Items\Cart.png" />

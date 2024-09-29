@@ -36,6 +36,7 @@ namespace VapingMod.Items
         public float particleScale = 1.5f;
         public SoundStyle? extraInhale = null;
         public SoundStyle? extraExhale = null;
+        public int cancerEffect = ModContent.BuffType<BuffLungCancer>();
         public int cancerChance = -1;
         public int nicChance = -1;
 
@@ -58,7 +59,7 @@ namespace VapingMod.Items
         {
             if (Main.rand.Next(0, cancerChance + 1) == 0 && cancerChance != -1)
             {
-                player.AddBuff(ModContent.BuffType<BuffLungCancer>(), Util.GetFramesFromSeconds(3600)); //@todo make it get longer the more the player smokes
+                player.AddBuff(cancerEffect, Util.GetFramesFromSeconds(3600)); //@todo make it get longer the more the player smokes
                 Logging.PublicLogger.Info(player.name + " diagnosed with lung cancer (too much chiefin)");
             }
             else

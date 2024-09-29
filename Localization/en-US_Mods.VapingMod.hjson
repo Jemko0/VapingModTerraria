@@ -35,4 +35,9 @@ Buffs: {
 		DisplayName: Nicotine Addiction
 		Description: nicotine addiction
 	}
+
+	BuffJonkler: {
+		DisplayName: Buff Jonkler
+		Description: Mods.VapingMod.Buffs.BuffJonkler.Description
+	}
 }
