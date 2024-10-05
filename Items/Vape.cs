@@ -4,6 +4,7 @@ using Terraria;
 using VapingMod.Helper;
 using Terraria.Audio;
 using VapingMod.Buffs;
+using Terraria.Chat;
 
 namespace VapingMod.Items
 {
@@ -56,6 +57,8 @@ namespace VapingMod.Items
             NicotineAddiction(player);
 
             RestartTimer();
+
+            //ChatHelper.SendChatMessageFromClient(new ChatMessage("" + currentClient.smokeCount));
             return true;
         }
 
@@ -63,7 +66,7 @@ namespace VapingMod.Items
         {
             if (Main.rand.Next(0, cancerChance + 1) == 0 && cancerChance != -1)
             {
-                player.AddBuff(cancerEffect, Util.GetFramesFromSeconds(currentClient.smokeCount* 1800));
+                player.AddBuff(cancerEffect, Util.GetFramesFromSeconds(currentClient.smokeCount * 30));
                 Logging.PublicLogger.Info(player.name + " diagnosed with lung cancer (too much chiefin)");
             }
             else
@@ -76,7 +79,7 @@ namespace VapingMod.Items
         {
             if (Main.rand.Next(0, nicChance + 1) == 0 && nicChance != -1)
             {
-                player.AddBuff(ModContent.BuffType<BuffNicotine>(), Util.GetFramesFromSeconds(currentClient.smokeCount* 120));
+                player.AddBuff(ModContent.BuffType<BuffNicotine>(), Util.GetFramesFromSeconds(currentClient.smokeCount * 60));
             }
         }
 

@@ -13,6 +13,12 @@ namespace VapingMod
             smokeCount++;
             base.PostUpdate();
         }
+
+        public override void UpdateDead()
+        {
+            smokeCount = 0;
+            base.UpdateDead();
+        }
         public override void SaveData(TagCompound tag)
         {
             tag["smoker"] = smokeCount;

@@ -27,7 +27,7 @@ namespace VapingMod.Buffs
             timer++;
             if(timer % 15  == 0)
             {
-                player.Hurt(Terraria.DataStructures.PlayerDeathReason.ByCustomReason("Lung Cancer"), 1, 0, cooldownCounter: 5, dodgeable: false);
+                player.Hurt(Terraria.DataStructures.PlayerDeathReason.ByCustomReason(player.name + "died of lung cancer lol"), 1, 0, cooldownCounter: 5, dodgeable: false);
             }
             base.Update(player, ref buffIndex);
         }

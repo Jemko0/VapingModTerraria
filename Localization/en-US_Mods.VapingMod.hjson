@@ -11,17 +11,32 @@ Items: {
 
 	Cart: {
 		DisplayName: Cart
-		Tooltip: ""
+		Tooltip: cart
 	}
 
 	EvilJonklerCart: {
 		DisplayName: Evil Jonkler Cart
-		Tooltip: ""
+		Tooltip: jiggler
 	}
 
 	EvilJonklerVape: {
 		DisplayName: Evil Jonkler Vape
-		Tooltip: ""
+		Tooltip: its evil
+	}
+
+	DevVape: {
+		DisplayName: DevVape-100nic
+		Tooltip: 100% NIC CHANCE
+	}
+
+	DevVape100nic: {
+		DisplayName: Dev Vape100Nic
+		Tooltip: DevVape100Nic
+	}
+
+	DevVape100cancer: {
+		DisplayName: Dev Vape100Cancer
+		Tooltip: DevVape100Cancer
 	}
 }
 
@@ -38,6 +53,6 @@ Buffs: {
 
 	BuffJonkler: {
 		DisplayName: Buff Jonkler
-		Description: Mods.VapingMod.Buffs.BuffJonkler.Description
+		Description: buff jonkler
 	}
 }
