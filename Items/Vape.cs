@@ -39,7 +39,8 @@ namespace VapingMod.Items
         public int cancerEffect = ModContent.BuffType<BuffLungCancer>();
         public int cancerChance = -1;
         public int nicChance = -1;
-
+        public int smokeCountIncrease = 1;
+        public VaperPlayer currentClient;
         public override bool? UseItem(Player player)
         {
             SoundEngine.PlaySound(new SoundStyle("VapingMod/Sounds/SFX/inhale"));
@@ -47,6 +48,9 @@ namespace VapingMod.Items
             {
                 SoundEngine.PlaySound(extraInhale);
             }
+
+            currentClient = player.GetModPlayer<VaperPlayer>();
+            currentClient.smokeCount += smokeCountIncrease;
 
             LungCancer(player);
             NicotineAddiction(player);
@@ -59,7 +63,7 @@ namespace VapingMod.Items
         {
             if (Main.rand.Next(0, cancerChance + 1) == 0 && cancerChance != -1)
             {
-                player.AddBuff(cancerEffect, Util.GetFramesFromSeconds(3600)); //@todo make it get longer the more the player smokes
+                player.AddBuff(cancerEffect, Util.GetFramesFromSeconds(currentClient.smokeCount* 1800));
                 Logging.PublicLogger.Info(player.name + " diagnosed with lung cancer (too much chiefin)");
             }
             else
@@ -72,7 +76,7 @@ namespace VapingMod.Items
         {
             if (Main.rand.Next(0, nicChance + 1) == 0 && nicChance != -1)
             {
-                player.AddBuff(ModContent.BuffType<BuffNicotine>(), Util.GetFramesFromSeconds(360000)); //@todo make it get longer the more the player smokes
+                player.AddBuff(ModContent.BuffType<BuffNicotine>(), Util.GetFramesFromSeconds(currentClient.smokeCount* 120));
             }
         }
 
