@@ -14,6 +14,7 @@
 	  <None Remove="Buffs\BuffJonkler.png" />
 	  <None Remove="Buffs\BuffNicotine.png" />
 	  <None Remove="Dusts\EvilJonklerDust.png" />
+	  <None Remove="Items\AdamantiteVape.png" />
 	  <None Remove="Items\Cart.png" />
 	  <None Remove="Items\DevVape100cancer.png" />
 	  <None Remove="Items\DevVape100nic.png" />

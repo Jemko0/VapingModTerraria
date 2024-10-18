@@ -38,6 +38,11 @@ Items: {
 		DisplayName: Dev Vape100Cancer
 		Tooltip: DevVape100Cancer
 	}
+
+	AdamantiteVape: {
+		DisplayName: Adamantite Vape
+		Tooltip: ""
+	}
 }
 
 Buffs: {
