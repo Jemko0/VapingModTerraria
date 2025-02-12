@@ -1,6 +1,6 @@
 Terraria´s first vaping mod (i think?)
 anyways ima update this once in a while
-source available for the public
+source available for the public, make PR´s if ur cool
 
 how to find:
 dryad/travelling merchant sells them or you can craft them (ask guide)

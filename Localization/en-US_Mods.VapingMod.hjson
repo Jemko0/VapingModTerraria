@@ -26,38 +26,44 @@ Items: {
 
 	DevVape: {
 		DisplayName: DevVape-100nic
-		Tooltip: 100% NIC CHANCE
+		Tooltip: 100% NIC CHANCE (DEV: this will prob kill u)
 	}
 
 	DevVape100nic: {
 		DisplayName: Dev Vape100Nic
-		Tooltip: DevVape100Nic
+		Tooltip: DevVape100Nic (DEV: this will prob kill u)
 	}
 
 	DevVape100cancer: {
 		DisplayName: Dev Vape100Cancer
-		Tooltip: DevVape100Cancer
+		Tooltip: DevVape100Cancer (DEV: this will kill u 100% no doubt)
 	}
 
 	AdamantiteVape: {
 		DisplayName: Adamantite Vape
-		Tooltip: ""
+		Tooltip: taste the wasted ores
 	}
+
+	WoodVape: {
+		DisplayName: Wood Vape
+		Tooltip: rich, but less than mahogany
+	}
+
 }
 
 Buffs: {
 	BuffLungCancer: {
 		DisplayName: Lung Cancer
-		Description: lung cancer
+		Description: wowza you´re dead
 	}
 
 	BuffNicotine: {
 		DisplayName: Nicotine Addiction
-		Description: nicotine addiction
+		Description: balls, no one can see this anyways
 	}
 
 	BuffJonkler: {
 		DisplayName: Buff Jonkler
-		Description: buff jonkler
+		Description: buff jonkler yummers
 	}
 }

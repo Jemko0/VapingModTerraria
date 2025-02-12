@@ -5,12 +5,14 @@ using VapingMod.Helper;
 using Terraria.Audio;
 using VapingMod.Buffs;
 using Terraria.Chat;
+using VapingMod.Items.Carts;
 
 namespace VapingMod.Items
 {
     /// <summary>
     /// vape base class
-    /// </summary>
+    /// </summary> 
+
     public class Vape : ModItem
     {
         private int timer = 0;
@@ -79,7 +81,7 @@ namespace VapingMod.Items
         {
             if (Main.rand.Next(0, nicChance + 1) == 0 && nicChance != -1)
             {
-                player.AddBuff(ModContent.BuffType<BuffNicotine>(), Util.GetFramesFromSeconds(currentClient.smokeCount * 60));
+                player.AddBuff(ModContent.BuffType<BuffNicotine>(), Util.GetFramesFromSeconds(currentClient.smokeCount * 35));
             }
         }
 
@@ -127,6 +129,7 @@ namespace VapingMod.Items
         {
             Recipe r = Recipe.Create(Type, 1);
             r.AddIngredient(ItemID.IronBar, 2);
+            r.AddIngredient(ModContent.ItemType<Cart>(), 1);
             r.AddTile(TileID.Anvils);
             r.Register();
         }

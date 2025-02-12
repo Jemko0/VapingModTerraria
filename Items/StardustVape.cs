@@ -1,5 +1,7 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.ModLoader;
+using VapingMod.Items.Carts;
 
 namespace VapingMod.Items
 {
@@ -23,6 +25,7 @@ namespace VapingMod.Items
         {
             Recipe r = Recipe.Create(Type, 1);
             r.AddIngredient(ItemID.IronBar, 2);
+            r.AddIngredient(ModContent.ItemType<Cart>(), 1);
             r.AddIngredient(ItemID.FallenStar, 3);
             r.AddTile(TileID.Anvils);
             r.Register();
